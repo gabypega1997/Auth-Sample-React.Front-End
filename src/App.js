@@ -12,7 +12,7 @@ import './App.css';
 const initialState = {
   input: '',
   route: 'signin',
-  isSignedIn: true,
+  isSignedIn: false,
   isProfileOpen: false,
   user: {
     id: '',
@@ -90,7 +90,7 @@ class App extends Component {
   }
 
   toggleModal = () => {
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       ...prevState,
       isProfileOpen: !prevState.isProfileOpen
     }))
