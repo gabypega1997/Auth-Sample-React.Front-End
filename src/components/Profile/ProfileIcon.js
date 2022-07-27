@@ -11,7 +11,7 @@ class ProfileIcon extends react.Component {
         super(props);
         this.toggle = this.toggle.bind(this);
         this.state = {
-            dropdownOpen: false
+            dropdownOpen: true
         }
     }
 
