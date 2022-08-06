@@ -7,7 +7,6 @@ class  Profile extends react.Component  {
         this.state ={
             name: this.props.user.name,
             age: this.props.user.age,
-            pet: this.props.user.pet
         }
 
     }
@@ -74,16 +73,7 @@ class  Profile extends react.Component  {
                     placeholder={user.age}
                     name="user-age"
                     id="age"
-                    />
-                    <label>Pet: </label>
-                    <input
-                    onChange={this.onFormChange}
-                    className="pa2 ba w-100"
-                    placeholder={user.pet}
-                    name="user-pet"
-                    id="pet"
-                    />
-                        
+                    />  
                     <div className="mt4" style={{display:'flex', justifyContent: 'space-evenly'}}> 
                         <button className='b pa2 grow pointer hover-white w-40 bg-light-blue b--black-20' onClick={() => this.onProfileUpdate({name, age, pet})} > Save</button>
                         <button className='b pa2 grow pointer hover-white w-40 bg-light-red b--black-20' onClick={this.props.toggleModal}> Cancel</button>
