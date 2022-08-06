@@ -55,7 +55,6 @@ class  Profile extends react.Component  {
                         src="http://tachyons.io/img/logo.jpg"
                     className="br-100 ba h3 w3 dib" alt="avatar" />
                     <h1>{this.state.name}</h1>
-                    <h4>{`Images Submitted: ${user.entries} `}</h4>
                     <p>{`Member since : ${new Date(user.joined).toLocaleDateString()}`}
                     </p>
                     <label>Name: </label>
